@@ -1,0 +1,428 @@
+@charset "utf-8";
+/* CSS Document */
+
+*,body,html{
+  margin:0;
+  padding:0;
+}
+
+body,html{
+  width:100%;
+  height:100%;
+}
+
+.Lowewrapper {
+	min-height: 100%;
+	height: auto !important;
+	margin: 0 auto -50px;
+}
+.push {
+	height: 30px;
+}
+
+.fl{
+  float:left;
+}
+
+.fr{
+  float:right;
+}
+
+.clr{
+  width:100%;
+  height:15px;
+  clear:both;
+}
+
+.clrsml{
+  width:100%;
+  height:5px;
+  clear:both;
+}
+
+.navbarStyle
+{
+	width:100%;
+	background:#333;
+	padding:10px 0px;
+	color:#fff;
+	position:fixed;
+	z-index:999999;
+}
+
+.logo {
+	margin-right: 13px;
+}
+.title {
+	margin-top: 10px;
+}
+
+.siteName
+{
+	font-size:26px;
+	margin-bottom:5px;
+	color:#FFD25C;
+}
+
+.siteNameDesc
+{
+	font-size:16px;
+	color: #ccc;
+}
+
+.block
+{ 
+	margin-top:100px;
+	width:100%;
+	height:2000px;
+	/*background:#ccc;*/
+	padding:10px;
+	background-image:url(../../ooo/Design/LoweLintas/Images/bgMainImg.png);
+}
+
+.entry-title:hover
+{
+	color:#DFAC30;
+	cursor:pointer;
+}
+
+/*Milestone css-start*/
+.milestone_bg {
+	background: url(../images/verticaldot.png) repeat-y fixed center, url("../images/milestone-bg.jpg") no-repeat fixed 50% -12% transparent;
+}
+.col-lg-2-milestone {
+	width: 14% !important;
+}
+.milestone-box-blue {
+	width: 100%;
+	/*border: 1px solid #DFAC30;*/
+	background-color: #333;
+	line-height: 17px !important;
+	border-radius:5px;
+	box-shadow: 3px 4px 10px #666;
+	position: relative;
+    /*-webkit-animation: mymove 4s ; /* Chrome, Safari, Opera 
+    animation: mymove 4s ;
+	animation-timing-function: ease-in-out;
+	-webkit-animation-timing-function: ease-in-out;
+	animation-iteration-count: 1;*/
+}
+
+/* Chrome, Safari, Opera 
+@-webkit-keyframes mymove {
+    from {left: -700px;}
+    to {left: 0px;}
+}
+
+/* Standard syntax
+@keyframes mymove {
+    from {left: -700px;}
+    to {left: 0px;}
+} */
+
+.milestone-box-blue-text {
+	background: url("../images/blueround.png") no-repeat scroll 2% center transparent;
+	padding: 2% 3% 2% 7%;
+	color:#ccc;
+}
+ 
+
+/* Chrome, Safari, Opera 
+@-webkit-keyframes mymove1 {
+    from {right: -700px;}
+    to {right: 0px;}
+}
+
+/* Standard syntax 
+@keyframes mymove1 {
+    from {right: -700px;}
+    to {right: 0px;}
+}*/
+
+.milestone-box-green-text {
+	background: url("../images/greenround.png") no-repeat scroll 2% center transparent;
+	padding: 2% 3% 2% 7%;
+	color:#ccc;
+}
+.blueArrow {
+	background: url("../images/leftarrow.png") no-repeat scroll 2% 0% transparent;
+	height: 38px;
+}
+.greenArrow {
+	background: url("../images/rightarrow.png") no-repeat scroll 100% 0% transparent;
+	height: 38px;
+}
+.blueArrow p {
+	float: right;
+	margin-right: 62%;
+	margin-top: 5.1%;
+	font-size: 15px;
+	color: #fff;
+	height: 40px;
+	width: 40px;
+	background: #DAA217;
+	padding: 10px 5px;
+	border-radius: 20px;
+}
+.greenArrow p {
+	float: right;
+	margin-right: 18%;
+	margin-top: 5.3%;
+	font-size: 15px;
+	color: #fff;
+	height: 40px;
+	width: 40px;
+	background: #666;
+	padding: 10px 5px;
+	border-radius: 20px;
+}
+.bord1 {
+	margin-top: 8%;
+}
+.bord2 {
+	margin-top: 8%;
+}
+.bord3 {
+	margin-top: 48%;
+}
+.bord4 {
+	margin-top: 20%;
+}
+.bord5 {
+	margin-top: 111%;
+}
+.bord6 {
+	margin-top: 20%;
+}
+.bord7 {
+	margin-top: 56%;
+}
+
+.bord8 {
+	margin-top: 86%;
+}
+
+.bord10 {
+	margin-top: 54%;
+}
+
+.bord12 {
+	margin-top: 132%;
+}
+
+.bord14 {
+	margin-top: 74%;
+}
+/*Milestone css-end*/
+
+.journey
+{
+	height: 55px;
+	width: 55px;
+	background: #292A29;
+	padding: 18px 2px;
+	border-radius: 30px;
+	color: #fff;
+}
+
+/*-----------------------------------------animation slideleft--------------------------------------------------*/
+
+.animation-element {
+  opacity: 0;
+  position: relative;
+}
+
+
+/*animation element sliding left*/
+
+.animation-element.slide-left {
+  opacity: 0;
+  -moz-transition: all 1000ms ease-in-out;
+  -webkit-transition: all 1000ms ease-in-out;
+  -o-transition: all 1000ms ease-in-out;
+  transition: all 1000ms ease-in-out;
+  -moz-transform: translate3d(-200px, 0px, 0px);
+  -webkit-transform: translate3d(-200px, 0px, 0px);
+  -o-transform: translate(-200px, 0px);
+  -ms-transform: translate(-200px, 0px);
+  transform: translate3d(-200px, 0px, 0px);
+}
+
+.animation-element.slide-left.in-view {
+  opacity: 1;
+  -moz-transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
+}
+
+
+/*animation slide left styled for testimonials*/
+
+ 
+
+/*.animation-element.slide-left.testimonial:hover,
+.animation-element.slide-left.testimonial:active {
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
+}
+
+.animation-element.slide-left.testimonial:nth-of-type(odd) {
+  width: 100%;
+  margin: 0% 1.5% 3.0% 0%;
+}
+
+.animation-element.slide-left.testimonial:nth-of-type(even) {
+  width: 100%;
+  margin: 0% 0% 3.0% 1.5%;
+}
+
+.animation-element.slide-left.testimonial .header {
+  float: left;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.animation-element.slide-left.testimonial .left {
+  float: left;
+  margin-right: 15px;
+}
+
+.animation-element.slide-left.testimonial .right {
+  float: left;
+}*/
+
+/*.animation-element.slide-left.testimonial img {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  box-shadow: 0px 1px 3px rgba(51, 51, 51, 0.5);
+}
+
+.animation-element.slide-left.testimonial h3 {
+  margin: 0px 0px 5px 0px;
+}
+
+.animation-element.slide-left.testimonial h4 {
+  margin: 0px 0px 5px 0px;
+}
+
+.animation-element.slide-left.testimonial .content {
+  float: left;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.animation-element.slide-left.testimonial .rating {}
+
+.animation-element.slide-left.testimonial i {
+  color: #aaa;
+  margin-right: 5px;
+}*/
+
+
+/*media queries for small devices*/
+/*testimonials
+@media screen and (max-width: 678px) {
+  
+  .animation-element.slide-left.testimonial,
+  .animation-element.slide-left.testimonial:nth-of-type(odd),
+  .animation-element.slide-left.testimonial:nth-of-type(even) {
+    width: 100%;
+    margin: 0px 0px 20px 0px;
+  }
+  .animation-element.slide-left.testimonial .right,
+  .animation-element.slide-left.testimonial .left,
+  .animation-element.slide-left.testimonial .content,
+  .animation-element.slide-left.testimonial .rating {
+    text-align: center;
+    float: none;
+  }
+  .animation-element.slide-left.testimonial img {
+    width: 85px;
+    height: 85px;
+    margin-bottom: 5px;
+  }
+}*/
+
+/*-----------------------------------------animation slideleft ends--------------------------------------------------*/
+
+
+
+/*---------------------------------------------animation slideright--------------------------------------------------*/
+
+.animation-element1 {
+  opacity: 0;
+  position: relative;
+}
+
+
+/*animation element sliding left*/
+
+.animation-element1.slide-right {
+  opacity: 0;
+  -moz-transition: all 1000ms ease-in-out;
+  -webkit-transition: all 1000ms ease-in-out;
+  -o-transition: all 1000ms ease-in-out;
+  transition: all 1000ms ease-in-out;
+  -moz-transform: translate3d(200px, 0px, 0px);
+  -webkit-transform: translate3d(200px, 0px, 0px);
+  -o-transform: translate(200px, 0px);
+  -ms-transform: translate(200px, 0px);
+  transform: translate3d(200px, 0px, 0px);
+}
+
+.animation-element1.slide-right.in-view1 {
+  opacity: 1;
+  -moz-transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
+}
+
+
+/*animation slide left styled for testimonials*/
+
+ 
+
+/*---------------------------------------------animation slideright Ends--------------------------------------------------*/
+
+
+
+
+@media only screen and (max-width: 800px) {
+	
+	
+.animation-element1.slide-right {
+    opacity: 0;
+    transform:none;
+    transition: none;
+}	
+	
+	
+.animation-element.slide-left {
+    opacity: 0;
+    transform: none;
+    transition: none;
+}
+	
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
